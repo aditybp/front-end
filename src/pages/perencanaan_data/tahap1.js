@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navigationbar";
-import Tabs from "../../components/Tabs";
+import Tabs from "../../components/tabs";
 import TextInput from "../../components/input";
 import Button from "../../components/button";
 import Stepper from "../../components/stepper";
@@ -106,7 +106,8 @@ const Tahap1 = () => {
               <Button
                 variant="solid_blue"
                 size="Medium"
-                onClick={handleCariData}>
+                onClick={handleCariData}
+              >
                 Cari Data di SIPASTI
               </Button>
             </div>
@@ -280,7 +281,8 @@ const Tahap1 = () => {
               variant="outlined_yellow"
               size="Medium"
               disabled={currentStep === 0}
-              onClick={() => setCurrentStep((prev) => Math.max(prev - 1, 1))}>
+              onClick={() => setCurrentStep((prev) => Math.max(prev - 1, 1))}
+            >
               Kembali
             </Button>
 
@@ -288,7 +290,8 @@ const Tahap1 = () => {
               variant="solid_blue"
               size="Medium"
               disabled={!areFieldsFilled()}
-              onClick={() => handleNextStep("manual")}>
+              onClick={() => handleNextStep("manual")}
+            >
               Lanjut
             </Button>
           </div>

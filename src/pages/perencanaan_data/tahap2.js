@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Table from "../../components/table";
 import Pagination from "../../components/pagination";
-import Tabs from "../../components/Tabs";
+import Tabs from "../../components/tabs";
 import Button from "../../components/button";
 import { Trash } from "iconsax-react";
 import SearchBox from "../../components/searchbox";
@@ -432,7 +432,8 @@ const Tahap2 = ({ onNext, onBack }) => {
             <Button
               variant="solid_blue"
               size="Medium"
-              onClick={() => setIsModalOpen(true)}>
+              onClick={() => setIsModalOpen(true)}
+            >
               Tambah Data
             </Button>
           </div>
@@ -458,7 +459,8 @@ const Tahap2 = ({ onNext, onBack }) => {
                   <Button
                     variant="outlined_yellow"
                     size="Medium"
-                    onClick={() => setIsModalOpen(false)}>
+                    onClick={() => setIsModalOpen(false)}
+                  >
                     Batal{" "}
                   </Button>
                   <Button onClick={handleAddRowMaterial}>Tambah</Button>
@@ -495,7 +497,8 @@ const Tahap2 = ({ onNext, onBack }) => {
             <Button
               variant="solid_blue"
               size="Medium"
-              onClick={() => setIsModalOpen(true)}>
+              onClick={() => setIsModalOpen(true)}
+            >
               Tambah Data
             </Button>
           </div>
@@ -521,7 +524,8 @@ const Tahap2 = ({ onNext, onBack }) => {
                   <Button
                     variant="outlined_yellow"
                     size="Medium"
-                    onClick={() => setIsModalOpen(false)}>
+                    onClick={() => setIsModalOpen(false)}
+                  >
                     Batal{" "}
                   </Button>
                   <Button onClick={handleAddRowsPeralatan}>Tambah</Button>
@@ -557,7 +561,8 @@ const Tahap2 = ({ onNext, onBack }) => {
             <Button
               variant="solid_blue"
               size="Medium"
-              onClick={() => setIsModalOpen(true)}>
+              onClick={() => setIsModalOpen(true)}
+            >
               Tambah Data
             </Button>
           </div>
@@ -583,7 +588,8 @@ const Tahap2 = ({ onNext, onBack }) => {
                   <Button
                     variant="outlined_yellow"
                     size="Medium"
-                    onClick={() => setIsModalOpen(false)}>
+                    onClick={() => setIsModalOpen(false)}
+                  >
                     Batal{" "}
                   </Button>
                   <Button onClick={handleAddRowsTenagaKerja}>Tambah</Button>
@@ -692,7 +698,8 @@ const Tahap2 = ({ onNext, onBack }) => {
               alert(error.message);
               // onNext() won't be called
             }
-          }}>
+          }}
+        >
           Simpan & Lanjut
         </Button>
       </div>

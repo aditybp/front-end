@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TextInput from "../components/input";
-import Dropdown from "../components/Dropdown";
-import Button from "../components/Button";
+import Dropdown from "../components/dropdown";
+import Button from "../components/button";
 import Checkbox from "../components/checkbox"; // Import the Checkbox component
 import Image from "next/image";
 import QuestionMark from "../../public/images/question_mark.svg"; // Your question mark SVG
@@ -103,7 +103,8 @@ const Table = ({ columns, data, setParentState }) => {
                     className={`px-3 py-6 text-base font-normal ${
                       index !== columns.length - 1 ? "pr-6" : ""
                     }`}
-                    style={{ width: column.width }}>
+                    style={{ width: column.width }}
+                  >
                     <div className="flex items-center">
                       {column.title}
                       {column.required && (
@@ -136,11 +137,13 @@ const Table = ({ columns, data, setParentState }) => {
                       : index % 2 === 0
                       ? "bg-custom-neutral-0"
                       : "bg-custom-neutral-100"
-                  }`}>
+                  }`}
+                >
                   {columns.map((column) => (
                     <td
                       key={column.accessor}
-                      className="px-3 py-6 text-base font-normal">
+                      className="px-3 py-6 text-base font-normal"
+                    >
                       {column.type === "textInput" ? (
                         <>
                           <TextInput
@@ -213,7 +216,8 @@ const Table = ({ columns, data, setParentState }) => {
                         <Button
                           size="Small"
                           variant="solid_blue" // Use the appropriate variant for a regular button
-                          onClick={() => column.onClick(row)}>
+                          onClick={() => column.onClick(row)}
+                        >
                           {column.buttonLabel} {/* Render the button label */}
                         </Button>
                       ) : column.type === "checkbox" ? (

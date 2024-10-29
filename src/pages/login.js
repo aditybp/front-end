@@ -8,7 +8,7 @@ import LoginImage from "../../public/images/login-asset.svg";
 
 import Register from "./register";
 import TextInput from "../components/input";
-import Button from "../components/Button";
+import Button from "../components/button";
 import Modal from "../components/modal";
 import ForgotPassword from "./forgotpassword";
 
@@ -155,7 +155,8 @@ const Login = () => {
                 onClick={openForgotPasswordModal}
                 variant="red_text"
                 size="ExtraSmall"
-                className="custom-padding">
+                className="custom-padding"
+              >
                 Lupa Password
               </Button>
             </div>
@@ -166,7 +167,8 @@ const Login = () => {
                 onClick={handleLogin}
                 variant="solid_blue"
                 size="Medium"
-                className="w-full">
+                className="w-full"
+              >
                 Masuk
               </Button>
               <div className="relative flex py-4 items-center">
@@ -183,7 +185,8 @@ const Login = () => {
                 onClick={handleSSOLogin}
                 variant="disabled"
                 size="Medium"
-                className="w-full">
+                className="w-full"
+              >
                 Masuk menggunakan SSO
               </Button>
               <div className="gap-x-1 flex items-center justify-center">
@@ -194,7 +197,8 @@ const Login = () => {
                   <Button
                     onClick={openRegisterModal}
                     variant="blue_text"
-                    size="Extra_Small">
+                    size="Extra_Small"
+                  >
                     Daftar
                   </Button>
                 </div>
@@ -217,7 +221,8 @@ const Login = () => {
               width="4"
               height="4"
               viewBox="0 0 4 4"
-              fill="none">
+              fill="none"
+            >
               <circle cx="2" cy="2" r="2" fill="#B3B3B3" />
             </svg>
             <Button onClick={handleLogin} variant="blue_text" size="B2">
@@ -240,7 +245,8 @@ const Login = () => {
       {/* Forgot Password Modal */}
       <Modal
         isOpen={isForgotPasswordModalOpen}
-        onClose={closeForgotPasswordModal}>
+        onClose={closeForgotPasswordModal}
+      >
         <ForgotPassword onClose={closeForgotPasswordModal} />
       </Modal>
     </div>
