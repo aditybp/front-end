@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navigationbar";
 import TextInput from "../../components/input";
-import FileInput from "../../components/FileInput";
 import Checkbox from "../../components/checkbox";
 import Button from "../../components/button";
-import Dropdown from "../../components/Dropdown";
+import Dropdown from "../../components/dropdown";
 
 const Inputvendor = ({ onNext }) => {
   const [selectedTypes, setSelectedTypes] = useState([]); // Store selected checkbox types
