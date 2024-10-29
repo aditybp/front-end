@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navigationbar";
 import TextInput from "../../components/input";
+import FileInput from "../../components/fileinput";
 import Checkbox from "../../components/checkbox";
 import Button from "../../components/button";
 import Dropdown from "../../components/dropdown";
