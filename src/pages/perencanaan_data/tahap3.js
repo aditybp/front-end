@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Table from "../../components/table";
 import Pagination from "../../components/pagination";
-import Tabs from "../../components/Tabs";
-import Button from "../../components/Button";
+import Tabs from "../../components/tabs";
+import Button from "../../components/button";
 import { Trash } from "iconsax-react";
 import axios from "axios";
 

@@ -1,12 +1,11 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Navbar from "../../components/navigationbar";
 import TextInput from "../../components/input";
-import FileInput from "../../components/FileInput";
 import Table from "../../components/table";
 import Pagination from "../../components/pagination";
-import Tabs from "../../components/Tabs";
+import Tabs from "../../components/tabs";
 import SearchBox from "../../components/searchbox";
-import Button from "../../components/Button";
+import Button from "../../components/button";
 import axios from "axios";
 
 const Tahap4 = ({ onNext, onBack }) => {
@@ -350,7 +349,8 @@ const Tahap4 = ({ onNext, onBack }) => {
               alert(error.message);
               // onNext() won't be called
             }
-          }}>
+          }}
+        >
           Simpan & Lanjut
         </Button>
       </div>
