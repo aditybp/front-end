@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import TextInput from "../components/input";
-import Button from "../components/Button";
+import Button from "../components/button";
 import FileInput from "../components/fileinput";
 import IconCheckbox from "../components/checkbox";
 import { CloseCircle } from "iconsax-react";
-import Dropdown from "../components/Dropdown";
+import Dropdown from "../components/dropdown";
 
 const Register = ({ onClose }) => {
   const [email, setEmail] = useState("");
@@ -247,7 +247,8 @@ const Register = ({ onClose }) => {
           onClick={handleRegister}
           variant="solid_blue"
           size="Medium"
-          disabled={!isChecked}>
+          disabled={!isChecked}
+        >
           Buat Akun
         </Button>
       </div>
